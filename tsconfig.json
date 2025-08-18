@@ -18,8 +18,16 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    /* --------------------------------------------------------------
+     * CHEMINS / ALIAS
+     * -------------------------------------------------------------- */
+    "baseUrl": ".", // Racine du projet
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src"],
+
+  "include": ["src/**/*", "src/**/*.ts", "src/**/*.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
